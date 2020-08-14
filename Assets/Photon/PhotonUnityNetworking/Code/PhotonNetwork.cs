@@ -3154,6 +3154,11 @@ namespace Photon.Pun
                 }
             }
         }
+
+        public static GameObject Instantiate(string playerPrefabLocation, Transform transform, Quaternion identity)
+        {
+            throw new NotImplementedException();
+        }
 #endif
     }
 }
