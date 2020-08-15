@@ -1350,7 +1350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &749853629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1674,6 +1674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884658503}
   - component: {fileID: 884658502}
+  - component: {fileID: 884658504}
   - component: {fileID: 884658501}
   m_Layer: 0
   m_Name: _GameManager
@@ -1717,8 +1718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameEnded: 0
-  timeToWin: 15
-  invincibleDuration: 0.5
+  timeToWin: 30
+  invincibleDuration: 1
   playerPrefabLocation: Player
   spawnPoints:
   - {fileID: 406602280}
@@ -1741,6 +1742,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &884658504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884658500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e246c7a318102064ab08e091d28e2005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerContainers:
+  - obj: {fileID: 1498505635}
+    nameText: {fileID: 15333870}
+    hatTimeSlider: {fileID: 665779238}
+  - obj: {fileID: 1489897945}
+    nameText: {fileID: 1792795750}
+    hatTimeSlider: {fileID: 878687677}
+  - obj: {fileID: 1148389277}
+    nameText: {fileID: 1880190480}
+    hatTimeSlider: {fileID: 848866039}
+  - obj: {fileID: 686764258}
+    nameText: {fileID: 1046202156}
+    hatTimeSlider: {fileID: 690698413}
+  winText: {fileID: 749853630}
 --- !u!1 &926123116
 GameObject:
   m_ObjectHideFlags: 0
